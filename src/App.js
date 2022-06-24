@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./components/Button/Button";
 import Input from "./components/Input/Input";
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
       <Input value= {text} placeholder={"Bir Metin İfadesi Giriniz..."} onChange = {(e)=> {
         setText(e.target.value) 
       }}/>
+
+      <Button text ="Giriş Yap" onClick={() => {alert("Tıklandı")}} />
     </div>
   );
 }
